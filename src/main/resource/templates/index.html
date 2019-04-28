@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<p>用户授权信息</p>
+<p th:text="'user.userId:' + ${userToken.userId}"></p>
+<p th:text="'user.userToken:' + ${userToken.userToken}"></p>
+<p th:text="'user.expiredtime:' + ${userToken.expiredtime}"></p>
+<p th:text="'user.svrurl:' + ${userToken.svrurl}"></p>
+
+<p>功能列表</p>
+<a href="list.html" th:href="@{/device/list}">设备列表</a>
+</body>
+</html>
